@@ -1,0 +1,39 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Recipe Book</a>
+
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-toggle="collapse"
+    data-target="#navbarNav"
+    aria-controls="navbarNav"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" routerLink='recipe'>Recipes</a>
+      </li>
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" routerLink='shopping-list'>Shopping List</a>
+      </li>
+    </ul>
+
+    <div class="btn-group nav-item" appDropdown #r="appDropdown" >
+      <a type="button" class="dropdown-toggle nav-link" data-toggle="dropdown" >
+        Manage
+        <span class="caret"></span></a>
+      <ul class="dropdown-menu" [ngClass]="{'show':r.isOpen}" >
+        <li><a class="dropdown-item" style="cursor: pointer"
+               >To Shopping List</a></li>
+        <li><a class="dropdown-item" href="#">Edit Recipe</a></li>
+        <li><a class="dropdown-item" href="#">Delete Recipe</a></li>
+      </ul>
+    </div>
+
+  </div>
+</nav>

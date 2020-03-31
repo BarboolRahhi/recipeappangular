@@ -1,0 +1,13 @@
+a.custom-card{
+  text-decoration: none;
+  color: black;
+}
+
+a.custom-card:hover {
+  background-color: #28a74685;
+}
+
+a.active{
+  color: white !important;
+  background-color: #28a745;
+}

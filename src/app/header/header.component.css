@@ -1,0 +1,5 @@
+.navbar-light .navbar-nav .active>.nav-link {
+    background-color: rgba(40, 167, 70, 0.774);
+    color: white;
+    border-radius: 2px;
+}
